@@ -5,7 +5,7 @@ async function fetchGreeting() {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      query: 'query {greeting }'
+      query: 'query {greeting}'
     })
   })
 
