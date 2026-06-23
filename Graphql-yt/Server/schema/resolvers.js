@@ -2,7 +2,8 @@ const { UserList, MovieList }  = require("../fakeData")
 const _ = require("lodash");
 const resolvers = {
   Query: {
-    users: () => {
+    users: (parent, args, context) => {
+      console.log(context)
       return UserList;
     },
     user: (parent, args) => {
